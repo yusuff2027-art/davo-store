@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>i-skypka — продай технику дорого</title>
+<title>i-skypka — продай технику дорого в Москве</title>
 <style>
 :root{--bg:#0a0a0f;--card:#14141c;--text:#e8e8f0;--muted:#8a8a99;--accent:#a855f7;--accent2:#22d3ee;--border:#26262f}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -13,15 +13,20 @@ a{text-decoration:none;color:inherit}
 header{position:sticky;top:0;z-index:100;background:rgba(10,10,15,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:14px 0}
 .header-inner{display:flex;justify-content:space-between;align-items:center}
 .logo{font-weight:800;font-size:1.3rem;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero{padding:80px 0 60px;text-align:center;position:relative}
+.hero{padding:90px 0 60px;text-align:center;position:relative}
 .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 300px at 50% 0%,rgba(168,85,247,.18),transparent);pointer-events:none}
-.hero h1{font-size:2.4rem;font-weight:800;margin-bottom:16px;background:linear-gradient(90deg,#fff,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p{color:var(--muted);max-width:600px;margin:0 auto 32px;font-size:1.1rem}
-.section-title{text-align:center;font-size:1.8rem;font-weight:800;margin-bottom:32px}
+.hero h1{font-size:2.6rem;font-weight:800;margin-bottom:16px;background:linear-gradient(90deg,#fff,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .sub{color:var(--text);max-width:640px;margin:0 auto 26px;font-size:1.15rem}
+.hero p{color:var(--muted);max-width:600px;margin:0 auto 30px;font-size:1.05rem}
+.hero-badges{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:34px}
+.badge{background:var(--card);border:1px solid var(--border);padding:10px 18px;border-radius:24px;font-size:.9rem;color:var(--accent2)}
+.section-title{text-align:center;font-size:1.8rem;font-weight:800;margin-bottom:12px}
+.section-sub{text-align:center;color:var(--muted);margin-bottom:32px;max-width:620px;margin-left:auto;margin-right:auto}
 .sellers{padding:20px 0 40px}
 .sellers-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
 .seller-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px 20px;text-align:center;display:block;transition:transform .25s,border-color .25s,box-shadow .25s}
 .seller-card:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 10px 40px rgba(168,85,247,.25)}
+.card-link{display:block;color:inherit}
 .avatar{width:120px;height:120px;border-radius:50%;margin:0 auto 16px;overflow:hidden;border:2px solid var(--accent)}
 .avatar img{width:100%;height:100%;object-fit:cover;display:block}
 .seller-card h3{font-size:1.35rem;margin-bottom:6px}
@@ -39,13 +44,17 @@ header{position:sticky;top:0;z-index:100;background:rgba(10,10,15,.92);backdrop-
 .step-card h3{margin-bottom:8px;font-size:1.05rem}
 .step-card p{color:var(--muted);font-size:.92rem}
 .repair{padding:50px 0}
-.repair-card{background:linear-gradient(135deg,rgba(168,85,247,.12),rgba(34,211,238,.08));border:1px solid var(--accent);border-radius:18px;padding:36px;text-align:center}
-.repair-card h2{font-size:1.6rem;margin-bottom:12px}
-.repair-card p{color:var(--muted);max-width:640px;margin:0 auto 10px}
-.repair-addr{margin:18px 0;color:var(--text);font-size:1rem;line-height:1.5}
+.repair-card{background:linear-gradient(135deg,rgba(168,85,247,.12),rgba(34,211,238,.08));border:1px solid var(--accent);border-radius:18px;padding:40px 30px;text-align:center}
+.repair-card h2{font-size:1.9rem;font-weight:800;margin-bottom:12px;background:linear-gradient(90deg,#fff,var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.repair-card .lead{color:var(--muted);max-width:640px;margin:0 auto 26px}
+.repair-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;max-width:820px;margin:0 auto 26px;text-align:left}
+.repair-item{background:rgba(10,10,15,.55);border:1px solid var(--border);border-radius:12px;padding:14px 16px;font-size:.95rem}
+.repair-item b{color:var(--accent2)}
+.repair-addr{margin:20px 0;color:var(--text);font-size:1rem;line-height:1.6}
 .repair-addr strong{color:var(--accent2)}
-.repair-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:20px}
-.repair-btns .msg-btn{min-width:200px;max-width:260px;padding:14px 0}
+.repair-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+.repair-btns .msg-btn{min-width:190px;max-width:230px;padding:14px 0}
+.btn-map{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;min-width:220px!important}
 .reviews{padding:50px 0}
 .reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;max-width:900px;margin:0 auto}
 .review{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:0 12px 12px 0;padding:20px}
@@ -53,7 +62,7 @@ header{position:sticky;top:0;z-index:100;background:rgba(10,10,15,.92);backdrop-
 .review .name{color:var(--accent2);font-weight:700}
 .review .about{display:block;color:var(--muted);font-size:.8rem;margin-top:2px}
 footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem}
-@media(max-width:600px){.hero h1{font-size:1.7rem}.hero{padding:56px 0 40px}}
+@media(max-width:600px){.hero h1{font-size:1.8rem}.hero{padding:56px 0 40px}.repair-card h2{font-size:1.4rem}}
 </style>
 </head>
 <body>
@@ -66,53 +75,67 @@ footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color
 
 <section class="hero">
   <div class="container">
-    <h1>Продай технику дорого</h1>
-    <p>Скупаем Apple и Android: iPhone, Samsung, Xiaomi, MacBook, iPad, Apple Watch, PlayStation. Выбирай скупщика и пиши напрямую — без посредников и ожидания.</p>
+    <h1>Продаёшь технику? Получи деньги за 30 минут</h1>
+    <div class="sub">Скупаем iPhone, Samsung, MacBook, PlayStation и другую технику — дороже Авито и быстрее объявлений. Приедем к тебе или встретимся где удобно.</div>
+    <p>Проверка при тебе, расчёт сразу после осмотра. Без ожиданий, переписок в никуда и «давай созвонимся завтра».</p>
+    <div class="hero-badges">
+      <span class="badge">⚡ Оценка по фото за 10 минут</span>
+      <span class="badge">📍 Выезд по Москве за час</span>
+      <span class="badge">💵 Наличные или перевод сразу</span>
+    </div>
   </div>
 </section>
 
 <section class="sellers container">
   <h2 class="section-title">Наши скупщики</h2>
+  <p class="section-sub">Выбирай того, кто подходит под твою задачу — и пиши напрямую в мессенджер.</p>
   <div class="sellers-grid">
 
-    <a class="seller-card" href="fayz.html" target="_blank">
-      <div class="avatar"><img src="images/fayz.jpg" alt="Файз"></div>
-      <h3>Файз</h3>
-      <div class="tagline">Быстрый выкуп в день обращения</div>
-      <p class="mini-desc">iPhone, Samsung, MacBook. Оценка по фото за 10 минут, выезд в течение часа.</p>
+    <div class="seller-card">
+      <a href="fayz.html" target="_blank" class="card-link">
+        <div class="avatar"><img src="images/fayz.jpg" alt="Файз"></div>
+        <h3>Файз</h3>
+        <div class="tagline">Быстрый выкуп в день обращения</div>
+        <p class="mini-desc">iPhone, Samsung, MacBook. Оценка по фото за 10 минут, выезд в течение часа.</p>
+      </a>
       <div class="messengers">
-        <span class="msg-btn btn-wa">WhatsApp</span>
-        <span class="msg-btn btn-tg">Telegram</span>
+        <a href="https://wa.me/79011163838" target="_blank" class="msg-btn btn-wa">WhatsApp</a>
+        <a href="https://t.me/xxx_fayz" target="_blank" class="msg-btn btn-tg">Telegram</a>
       </div>
-    </a>
+    </div>
 
-    <a class="seller-card" href="david.html" target="_blank">
-      <div class="avatar"><img src="images/david.jpg" alt="Давид"></div>
-      <h3>Давид</h3>
-      <div class="tagline">Дорого выкупаю технику премиум-класса</div>
-      <p class="mini-desc">iPhone Pro Max, MacBook Pro, Galaxy S/Ultra. За комплекты с чеком — выше рынка.</p>
+    <div class="seller-card">
+      <a href="david.html" target="_blank" class="card-link">
+        <div class="avatar"><img src="images/david.jpg" alt="Давид"></div>
+        <h3>Давид</h3>
+        <div class="tagline">Дорого выкупаю технику премиум-класса</div>
+        <p class="mini-desc">iPhone Pro Max, MacBook Pro, Galaxy S/Ultra. За комплекты с чеком — выше рынка.</p>
+      </a>
       <div class="messengers">
-        <span class="msg-btn btn-wa">WhatsApp</span>
-        <span class="msg-btn btn-tg">Telegram</span>
+        <a href="https://wa.me/79295735787" target="_blank" class="msg-btn btn-wa">WhatsApp</a>
+        <a href="https://t.me/davo_store11" target="_blank" class="msg-btn btn-tg">Telegram</a>
       </div>
-    </a>
+    </div>
 
-    <a class="seller-card" href="vusal.html" target="_blank">
-      <div class="avatar"><img src="images/vusal.jpg" alt="Вусал"></div>
-      <h3>Вусал</h3>
-      <div class="tagline">Выкупаю технику в любом состоянии</div>
-      <p class="mini-desc">Битые, утопленные и без документов. Apple и Android, приставки. Расчёт сразу.</p>
+    <div class="seller-card">
+      <a href="vusal.html" target="_blank" class="card-link">
+        <div class="avatar"><img src="images/vusal.jpg" alt="Вусал"></div>
+        <h3>Вусал</h3>
+        <div class="tagline">Выкупаю технику в любом состоянии</div>
+        <p class="mini-desc">Битые, утопленные и без документов. Apple и Android, приставки. Расчёт сразу.</p>
+      </a>
       <div class="messengers">
-        <span class="msg-btn btn-wa">WhatsApp</span>
-        <span class="msg-btn btn-tg">Telegram</span>
+        <a href="https://wa.me/79774617879" target="_blank" class="msg-btn btn-wa">WhatsApp</a>
+        <a href="https://t.me/bayram1_6" target="_blank" class="msg-btn btn-tg">Telegram</a>
       </div>
-    </a>
+    </div>
 
   </div>
 </section>
 
 <section class="steps container">
   <h2 class="section-title">Как проходит выкуп</h2>
+  <p class="section-sub">Три шага от «хочу продать» до денег в кармане.</p>
   <div class="steps-grid">
     <div class="step-card"><span class="step-num">1</span><h3>Оценка по фото</h3><p>Пришли фото техники скупщику в WhatsApp или Telegram — цену назовут за 10 минут.</p></div>
     <div class="step-card"><span class="step-num">2</span><h3>Встреча и проверка</h3><p>Скупщик приедет к вам или встретитесь в удобном месте. Проверка при вас.</p></div>
@@ -122,22 +145,32 @@ footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color
 
 <section class="repair container">
   <div class="repair-card">
-    <h2>Сломалась техника? Починим</h2>
-    <p>Ремонтируем Apple и Android: экраны, аккумуляторы, разъёмы зарядки, камеры, после воды. Оригинальные и качественные запчасти, гарантия на работу.</p>
+    <h2>Сломалась техника? Мы починим</h2>
+    <p class="lead">Наш сервисный центр в Коньково вернёт к жизни iPhone, MacBook, Samsung и другую технику. Ремонт от 30 минут, гарантия на все работы.</p>
+    <div class="repair-list">
+      <div class="repair-item"><b>Экраны и дисплейные модули</b><br>Замена стекла, OLED, срочный ремонт от 30 минут</div>
+      <div class="repair-item"><b>Аккумуляторы</b><br>Оригинальные и качественные АКБ с гарантией</div>
+      <div class="repair-item"><b>Разъёмы зарядки</b><br>Быстрая диагностика, замена при вас</div>
+      <div class="repair-item"><b>Камеры и Face ID</b><br>Замена камер, ремонт после удара</div>
+      <div class="repair-item"><b>После воды</b><br>Чистка и восстановление утопленной техники</div>
+      <div class="repair-item"><b>MacBook и iPad</b><br>Клавиатуры, матрицы, чистка от пыли</div>
+    </div>
     <div class="repair-addr">
-      <strong>Адрес:</strong> Москва, Профсоюзная улица, 109к2<br>
-      м. Коньково, 2-й выход от метро<br>
+      <strong>📍 Москва, Профсоюзная улица, 109к2</strong><br>
+      м. Коньково — 2-й выход от метро, увидите вывеску DV Store<br>
       <strong>Telegram:</strong> @dv_store_order &nbsp;•&nbsp; <strong>WhatsApp:</strong> +7 993 361-78-29
     </div>
     <div class="repair-btns">
-      <a href="https://t.me/dv_store_order" class="msg-btn btn-tg">Написать в Telegram</a>
-      <a href="https://wa.me/79933617829" class="msg-btn btn-wa">Написать в WhatsApp</a>
+      <a href="https://t.me/dv_store_order" target="_blank" class="msg-btn btn-tg">Написать в Telegram</a>
+      <a href="https://wa.me/79933617829" target="_blank" class="msg-btn btn-wa">Написать в WhatsApp</a>
+      <a href="https://yandex.ru/maps/org/dv_store/179122901606?si=mjgm0kypxfxr88nz7yr3d2u12w" target="_blank" class="msg-btn btn-map">📍 Построить маршрут</a>
     </div>
   </div>
 </section>
 
 <section class="reviews container">
   <h2 class="section-title">Отзывы</h2>
+  <p class="section-sub">Реальные истории людей, которые уже продали технику или починили её у нас.</p>
   <div class="reviews-grid">
     <div class="review">
       <p>«Продал iPhone 13 за 20 минут — оценили по фото, приехали на место, деньги сразу. Рекомендую!»</p>
@@ -158,7 +191,7 @@ footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color
 </section>
 
 <footer>
-  <p>i-skypka — скупка техники в Москве. Работаем ежедневно с 8:00 до 23:59.</p>
+  <p>i-skypka — скупка и ремонт техники в Москве. Работаем ежедневно с 8:00 до 23:59.</p>
 </footer>
 </body>
 </html>
