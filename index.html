@@ -22,8 +22,8 @@ header{position:sticky;top:0;z-index:100;background:rgba(10,10,15,.92);backdrop-
 .sellers-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
 .seller-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px 20px;text-align:center;display:block;transition:transform .25s,border-color .25s,box-shadow .25s}
 .seller-card:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 10px 40px rgba(168,85,247,.25)}
-.avatar{width:120px;height:120px;border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-size:3rem;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--accent),var(--accent2))}
-.avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:none}
+.avatar{width:120px;height:120px;border-radius:50%;margin:0 auto 16px;overflow:hidden;border:2px solid var(--accent)}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block}
 .seller-card h3{font-size:1.35rem;margin-bottom:6px}
 .tagline{color:var(--accent2);font-size:.95rem;margin-bottom:14px}
 .mini-desc{color:var(--muted);font-size:.9rem;margin-bottom:18px}
@@ -76,7 +76,7 @@ footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color
   <div class="sellers-grid">
 
     <a class="seller-card" href="fayz.html" target="_blank">
-      <div class="avatar"><span>Ф</span><img src="images/fayz.jpg" alt="Файз" loading="lazy"></div>
+      <div class="avatar"><img src="images/fayz.jpg" alt="Файз"></div>
       <h3>Файз</h3>
       <div class="tagline">Быстрый выкуп в день обращения</div>
       <p class="mini-desc">iPhone, Samsung, MacBook. Оценка по фото за 10 минут, выезд в течение часа.</p>
@@ -87,7 +87,7 @@ footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color
     </a>
 
     <a class="seller-card" href="david.html" target="_blank">
-      <div class="avatar"><span>Д</span><img src="images/david.jpg" alt="Давид" loading="lazy"></div>
+      <div class="avatar"><img src="images/david.jpg" alt="Давид"></div>
       <h3>Давид</h3>
       <div class="tagline">Дорого выкупаю технику премиум-класса</div>
       <p class="mini-desc">iPhone Pro Max, MacBook Pro, Galaxy S/Ultra. За комплекты с чеком — выше рынка.</p>
@@ -98,7 +98,7 @@ footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color
     </a>
 
     <a class="seller-card" href="vusal.html" target="_blank">
-      <div class="avatar"><span>В</span><img src="images/vusal.jpg" alt="Вусал" loading="lazy"></div>
+      <div class="avatar"><img src="images/vusal.jpg" alt="Вусал"></div>
       <h3>Вусал</h3>
       <div class="tagline">Выкупаю технику в любом состоянии</div>
       <p class="mini-desc">Битые, утопленные и без документов. Apple и Android, приставки. Расчёт сразу.</p>
@@ -158,7 +158,7 @@ footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color
 </section>
 
 <footer>
-  <p>i-skypka — скупка техники в Москве. Работаем ежедневно с 10:00 до 23:59.</p>
+  <p>i-skypka — скупка техники в Москве. Работаем ежедневно с 8:00 до 23:59.</p>
 </footer>
 </body>
 </html>
