@@ -13,6 +13,7 @@ a{text-decoration:none;color:inherit}
 header{position:sticky;top:0;z-index:100;background:rgba(10,10,15,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:14px 0}
 .header-inner{display:flex;justify-content:space-between;align-items:center}
 .logo{font-weight:800;font-size:1.3rem;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.trust{font-weight:700;font-size:.95rem;color:var(--accent2);background:var(--card);border:1px solid var(--border);padding:8px 16px;border-radius:22px}
 .hero{padding:90px 0 60px;text-align:center;position:relative}
 .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 300px at 50% 0%,rgba(168,85,247,.18),transparent);pointer-events:none}
 .hero h1{font-size:2.6rem;font-weight:800;margin-bottom:16px;background:linear-gradient(90deg,#fff,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -62,14 +63,14 @@ header{position:sticky;top:0;z-index:100;background:rgba(10,10,15,.92);backdrop-
 .review .name{color:var(--accent2);font-weight:700}
 .review .about{display:block;color:var(--muted);font-size:.8rem;margin-top:2px}
 footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem}
-@media(max-width:600px){.hero h1{font-size:1.8rem}.hero{padding:56px 0 40px}.repair-card h2{font-size:1.4rem}}
+@media(max-width:600px){.hero h1{font-size:1.8rem}.hero{padding:56px 0 40px}.repair-card h2{font-size:1.4rem}.trust{font-size:.8rem;padding:7px 12px}}
 </style>
 </head>
 <body>
 <header>
   <div class="container header-inner">
     <div class="logo">i-skypka</div>
-    <a href="tel:+79011163838" class="msg-btn" style="background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff">Позвонить</a>
+    <div class="trust">😎 Нам доверяют</div>
   </div>
 </header>
 
@@ -191,7 +192,7 @@ footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color
 </section>
 
 <footer>
-  <p>i-skypka — скупка и ремонт техники в Москве. Работаем ежедневно с 8:00 до 23:59.</p>
+  <p>i-skypka — скупка и ремонт техники в Москве. Работаем ежедневно с 10:00 до 23:59.</p>
 </footer>
 </body>
 </html>
