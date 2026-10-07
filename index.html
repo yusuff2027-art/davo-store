@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SKYPKA.PRO — продай технику дорого</title>
+<title>i-skypka — продай технику дорого</title>
 <style>
 :root{--bg:#0a0a0f;--card:#14141c;--text:#e8e8f0;--muted:#8a8a99;--accent:#a855f7;--accent2:#22d3ee;--border:#26262f}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -20,7 +20,7 @@ header{position:sticky;top:0;z-index:100;background:rgba(10,10,15,.92);backdrop-
 .section-title{text-align:center;font-size:1.8rem;font-weight:800;margin-bottom:32px}
 .sellers{padding:20px 0 40px}
 .sellers-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
-.seller-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px 20px;text-align:center;display:block;transition:transform .25s,border-color .25s,box-shadow .25s;position:relative;overflow:hidden}
+.seller-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px 20px;text-align:center;display:block;transition:transform .25s,border-color .25s,box-shadow .25s}
 .seller-card:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 10px 40px rgba(168,85,247,.25)}
 .avatar{width:120px;height:120px;border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-size:3rem;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--accent),var(--accent2))}
 .avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:none}
@@ -38,14 +38,20 @@ header{position:sticky;top:0;z-index:100;background:rgba(10,10,15,.92);backdrop-
 .step-num{display:block;font-size:2.2rem;font-weight:800;margin-bottom:8px;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
 .step-card h3{margin-bottom:8px;font-size:1.05rem}
 .step-card p{color:var(--muted);font-size:.92rem}
-.join{padding:50px 0}
-.join-card{background:linear-gradient(135deg,rgba(168,85,247,.12),rgba(34,211,238,.08));border:1px solid var(--accent);border-radius:18px;padding:36px;text-align:center}
-.join-card h2{font-size:1.6rem;margin-bottom:12px}
-.join-card p{color:var(--muted);max-width:640px;margin:0 auto 10px}
-.join-price{font-size:1.7rem;font-weight:800;color:var(--accent2);margin:16px 0 20px}
-.join-contacts{margin:16px 0 24px;color:var(--text};font-size:1rem;line-height:1.4}
-.join-contacts strong{color:var(--accent)}
-.join-card .btn-tg{max-width:260px;width:100%;padding:14px 0;font-size:1rem}
+.repair{padding:50px 0}
+.repair-card{background:linear-gradient(135deg,rgba(168,85,247,.12),rgba(34,211,238,.08));border:1px solid var(--accent);border-radius:18px;padding:36px;text-align:center}
+.repair-card h2{font-size:1.6rem;margin-bottom:12px}
+.repair-card p{color:var(--muted);max-width:640px;margin:0 auto 10px}
+.repair-addr{margin:18px 0;color:var(--text);font-size:1rem;line-height:1.5}
+.repair-addr strong{color:var(--accent2)}
+.repair-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+.repair-btns .msg-btn{min-width:200px;max-width:260px;padding:14px 0}
+.reviews{padding:50px 0}
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;max-width:900px;margin:0 auto}
+.review{background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:0 12px 12px 0;padding:20px}
+.review p{margin-bottom:10px;color:var(--muted);font-size:.95rem}
+.review .name{color:var(--accent2);font-weight:700}
+.review .about{display:block;color:var(--muted);font-size:.8rem;margin-top:2px}
 footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem}
 @media(max-width:600px){.hero h1{font-size:1.7rem}.hero{padding:56px 0 40px}}
 </style>
@@ -53,7 +59,7 @@ footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color
 <body>
 <header>
   <div class="container header-inner">
-    <div class="logo">SKYPKA.PRO</div>
+    <div class="logo">i-skypka</div>
     <a href="tel:+79011163838" class="msg-btn" style="background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff">Позвонить</a>
   </div>
 </header>
@@ -114,26 +120,45 @@ footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color
   </div>
 </section>
 
-<section class="join container">
-  <div class="join-card">
-    <h2>Ты скупщик? Размести свой профиль у нас</h2>
-    <p>Вашу карточку увидят тысячи людей, которые каждый день заходят продать технику. Клиент нажимает на фото и попадает на ваш профиль с контактами — пишет вам напрямую.</p>
-    <div class="join-price">990 ₽ / месяц</div>
-    <p>Фото и имя на главной • отдельная страница-профиль • кнопки WhatsApp и Telegram • размещение в течение суток.</p>
-
-    <div class="join-contacts">
-      Если вы скупщик и хотите, чтобы ваше резюме было у нас на сайте — пишите:<br>
-      <strong>Telegram: @xxx_fayz</strong><br>
-      <strong>WhatsApp: +7 901 116-38-38</strong>
+<section class="repair container">
+  <div class="repair-card">
+    <h2>Сломалась техника? Починим</h2>
+    <p>Ремонтируем Apple и Android: экраны, аккумуляторы, разъёмы зарядки, камеры, после воды. Оригинальные и качественные запчасти, гарантия на работу.</p>
+    <div class="repair-addr">
+      <strong>Адрес:</strong> Москва, Профсоюзная улица, 109к2<br>
+      м. Коньково, 2-й выход от метро<br>
+      <strong>Telegram:</strong> @dv_store_order &nbsp;•&nbsp; <strong>WhatsApp:</strong> +7 993 361-78-29
     </div>
+    <div class="repair-btns">
+      <a href="https://t.me/dv_store_order" class="msg-btn btn-tg">Написать в Telegram</a>
+      <a href="https://wa.me/79933617829" class="msg-btn btn-wa">Написать в WhatsApp</a>
+    </div>
+  </div>
+</section>
 
-    <a href="https://wa.me/79011163838" class="msg-btn btn-wa" style="margin-top:20px">Написать в WhatsApp</a>
-    <a href="https://t.me/xxx_fayz" class="msg-btn btn-tg" style="margin-top:8px">Написать в Telegram</a>
+<section class="reviews container">
+  <h2 class="section-title">Отзывы</h2>
+  <div class="reviews-grid">
+    <div class="review">
+      <p>«Продал iPhone 13 за 20 минут — оценили по фото, приехали на место, деньги сразу. Рекомендую!»</p>
+      <span class="name">Алексей</span>
+      <span class="about">Продажа iPhone 13</span>
+    </div>
+    <div class="review">
+      <p>«Боялась продавать технику незнакомым людям, но всё прошло честно: проверка при мне, деньги переводом на карту сразу.»</p>
+      <span class="name">Марина</span>
+      <span class="about">Продажа MacBook Air</span>
+    </div>
+    <div class="review">
+      <p>«Разбил экран на Samsung, за час починили по цене ниже, чем в сервисах у метро. Пишешь в Telegram — сразу отвечают.»</p>
+      <span class="name">Дмитрий</span>
+      <span class="about">Ремонт Samsung</span>
+    </div>
   </div>
 </section>
 
 <footer>
-  <p>SKYPKA.PRO — скупка техники в Москве. Работаем ежедневно с 10:00 до 23:59.</p>
+  <p>i-skypka — скупка техники в Москве. Работаем ежедневно с 10:00 до 23:59.</p>
 </footer>
 </body>
 </html>
