@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SKYPKA.PRO — продай технику дорого</title>
+<style>
+:root{--bg:#0a0a0f;--card:#14141c;--text:#e8e8f0;--muted:#8a8a99;--accent:#a855f7;--accent2:#22d3ee;--border:#26262f}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;line-height:1.55}
+a{text-decoration:none;color:inherit}
+.container{max-width:1100px;margin:0 auto;padding:0 16px}
+header{position:sticky;top:0;z-index:100;background:rgba(10,10,15,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:14px 0}
+.header-inner{display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:1.3rem;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero{padding:80px 0 60px;text-align:center;position:relative}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 300px at 50% 0%,rgba(168,85,247,.18),transparent);pointer-events:none}
+.hero h1{font-size:2.4rem;font-weight:800;margin-bottom:16px;background:linear-gradient(90deg,#fff,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);max-width:600px;margin:0 auto 32px;font-size:1.1rem}
+.section-title{text-align:center;font-size:1.8rem;font-weight:800;margin-bottom:32px}
+.sellers{padding:20px 0 40px}
+.sellers-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.seller-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px 20px;text-align:center;display:block;transition:transform .25s,border-color .25s,box-shadow .25s;position:relative;overflow:hidden}
+.seller-card:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 10px 40px rgba(168,85,247,.25)}
+.avatar{width:120px;height:120px;border-radius:50%;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-size:3rem;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--accent),var(--accent2))}
+.avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:none}
+.seller-card h3{font-size:1.35rem;margin-bottom:6px}
+.tagline{color:var(--accent2);font-size:.95rem;margin-bottom:14px}
+.mini-desc{color:var(--muted);font-size:.9rem;margin-bottom:18px}
+.messengers{display:flex;gap:10px;justify-content:center}
+.msg-btn{flex:1;max-width:150px;padding:11px 0;border-radius:10px;font-weight:700;font-size:.9rem;display:inline-block;transition:opacity .2s}
+.msg-btn:hover{opacity:.85}
+.btn-wa{background:#25D366;color:#04250f}
+.btn-tg{background:#229ED9;color:#fff}
+.steps{padding:50px 0}
+.steps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.step-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:26px;text-align:center}
+.step-num{display:block;font-size:2.2rem;font-weight:800;margin-bottom:8px;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.step-card h3{margin-bottom:8px;font-size:1.05rem}
+.step-card p{color:var(--muted);font-size:.92rem}
+.join{padding:50px 0}
+.join-card{background:linear-gradient(135deg,rgba(168,85,247,.12),rgba(34,211,238,.08));border:1px solid var(--accent);border-radius:18px;padding:36px;text-align:center}
+.join-card h2{font-size:1.6rem;margin-bottom:12px}
+.join-card p{color:var(--muted);max-width:640px;margin:0 auto 10px}
+.join-price{font-size:1.7rem;font-weight:800;color:var(--accent2);margin:16px 0 20px}
+.join-contacts{margin:16px 0 24px;color:var(--text};font-size:1rem;line-height:1.4}
+.join-contacts strong{color:var(--accent)}
+.join-card .btn-tg{max-width:260px;width:100%;padding:14px 0;font-size:1rem}
+footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem}
+@media(max-width:600px){.hero h1{font-size:1.7rem}.hero{padding:56px 0 40px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container header-inner">
+    <div class="logo">SKYPKA.PRO</div>
+    <a href="tel:+79011163838" class="msg-btn" style="background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff">Позвонить</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Продай технику дорого</h1>
+    <p>Скупаем Apple и Android: iPhone, Samsung, Xiaomi, MacBook, iPad, Apple Watch, PlayStation. Выбирай скупщика и пиши напрямую — без посредников и ожидания.</p>
+  </div>
+</section>
+
+<section class="sellers container">
+  <h2 class="section-title">Наши скупщики</h2>
+  <div class="sellers-grid">
+
+    <a class="seller-card" href="fayz.html" target="_blank">
+      <div class="avatar"><span>Ф</span><img src="images/fayz.jpg" alt="Файз" loading="lazy"></div>
+      <h3>Файз</h3>
+      <div class="tagline">Быстрый выкуп в день обращения</div>
+      <p class="mini-desc">iPhone, Samsung, MacBook. Оценка по фото за 10 минут, выезд в течение часа.</p>
+      <div class="messengers">
+        <span class="msg-btn btn-wa">WhatsApp</span>
+        <span class="msg-btn btn-tg">Telegram</span>
+      </div>
+    </a>
+
+    <a class="seller-card" href="david.html" target="_blank">
+      <div class="avatar"><span>Д</span><img src="images/david.jpg" alt="Давид" loading="lazy"></div>
+      <h3>Давид</h3>
+      <div class="tagline">Дорого выкупаю технику премиум-класса</div>
+      <p class="mini-desc">iPhone Pro Max, MacBook Pro, Galaxy S/Ultra. За комплекты с чеком — выше рынка.</p>
+      <div class="messengers">
+        <span class="msg-btn btn-wa">WhatsApp</span>
+        <span class="msg-btn btn-tg">Telegram</span>
+      </div>
+    </a>
+
+    <a class="seller-card" href="vusal.html" target="_blank">
+      <div class="avatar"><span>В</span><img src="images/vusal.jpg" alt="Вусал" loading="lazy"></div>
+      <h3>Вусал</h3>
+      <div class="tagline">Выкупаю технику в любом состоянии</div>
+      <p class="mini-desc">Битые, утопленные и без документов. Apple и Android, приставки. Расчёт сразу.</p>
+      <div class="messengers">
+        <span class="msg-btn btn-wa">WhatsApp</span>
+        <span class="msg-btn btn-tg">Telegram</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<section class="steps container">
+  <h2 class="section-title">Как проходит выкуп</h2>
+  <div class="steps-grid">
+    <div class="step-card"><span class="step-num">1</span><h3>Оценка по фото</h3><p>Пришли фото техники скупщику в WhatsApp или Telegram — цену назовут за 10 минут.</p></div>
+    <div class="step-card"><span class="step-num">2</span><h3>Встреча и проверка</h3><p>Скупщик приедет к вам или встретитесь в удобном месте. Проверка при вас.</p></div>
+    <div class="step-card"><span class="step-num">3</span><h3>Расчёт сразу</h3><p>Наличными или переводом — сразу после проверки. Без ожиданий и торгов.</p></div>
+  </div>
+</section>
+
+<section class="join container">
+  <div class="join-card">
+    <h2>Ты скупщик? Размести свой профиль у нас</h2>
+    <p>Вашу карточку увидят тысячи людей, которые каждый день заходят продать технику. Клиент нажимает на фото и попадает на ваш профиль с контактами — пишет вам напрямую.</p>
+    <div class="join-price">990 ₽ / месяц</div>
+    <p>Фото и имя на главной • отдельная страница-профиль • кнопки WhatsApp и Telegram • размещение в течение суток.</p>
+
+    <div class="join-contacts">
+      Если вы скупщик и хотите, чтобы ваше резюме было у нас на сайте — пишите:<br>
+      <strong>Telegram: @xxx_fayz</strong><br>
+      <strong>WhatsApp: +7 901 116-38-38</strong>
+    </div>
+
+    <a href="https://wa.me/79011163838" class="msg-btn btn-wa" style="margin-top:20px">Написать в WhatsApp</a>
+    <a href="https://t.me/xxx_fayz" class="msg-btn btn-tg" style="margin-top:8px">Написать в Telegram</a>
+  </div>
+</section>
+
+<footer>
+  <p>SKYPKA.PRO — скупка техники в Москве. Работаем ежедневно с 10:00 до 23:59.</p>
+</footer>
+</body>
+</html>
