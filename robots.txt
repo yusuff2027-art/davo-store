@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://davo-store.ru/sitemap.xml
